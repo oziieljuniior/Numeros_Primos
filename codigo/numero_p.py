@@ -5,14 +5,15 @@ Created on Tue Oct 25 22:28:51 2022
 
 @author: oziel
 """
+#Biblioteca para exportação de planilhas
 from openpyxl import Workbook
-
+#criação de uma planilha
 wb = Workbook()
 ws = wb.active
 ws.title = "numeros_primos"
 #print(arquivo_excel.sheetnames)
 ws['A1'] = "Numeros_primos"
-
+#ite é a quantidade de iterações que o código deve realizar
 ite = int(input("Insira a quantidade de iterações que o código deve fazer: "))
 l = 1
 a = [2,3,5,7,11,13,17,19]
